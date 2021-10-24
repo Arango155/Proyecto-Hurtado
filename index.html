@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- El meta charset utf 8 permite que se puedan usar tildes u otros simbolos del español -->
+  <meta charset="utf-8">
+  <title>Proyecto Final | Lupita Hurtado</title>
+
+  <!-- Agregue estas 2 lineas de codigo para poder hacer un banner con imagenes, los links los encontre en bxslider -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <!-- Link a mi archivo .css para agregar los estilos a este archivo -->
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Titulo -->
+<h1>Mejores sitios turisticos</h1>
+
+      <!-- Creo un div mediante el cual iran todos mis parrafos para poder seccionarlos en diferentes partes y trabajar de mejor manera con estos a su vez que escribo el codigo para poder insertar el slide y dentro de este las respectivas imagenes que iran dentro de este -->
+      <div>
+        
+          <ul class="slider1">
+            <li><img src="img/slider/slider1.jpg" alt=""></li>
+            <li><img src="img/slider/slider2.jpg" alt=""></li>
+            <li><img src="img/slider/slider3.jpg" alt=""></li>
+          </ul>
+        
+      
+   
+    
+    <!-- Coloco mi primer parrafo con un div y clase llamada centrado ya que en css lo modifico para que este centrado a la pagina  -->
+
+    <div class="centrado">
+      <h3>Introducción</h3>
+      <p>Por medio de esta pagina web quiero dar a conocer los sitios turisticos y lugares de recreacion los cuales estan ubicados en el mundo y resaltando entre estos los mas visitados los cuales pretenden buscar que las personas que visitan estos lugares tengan unos momentos de recreacion, deporte y relajacion atraves de diferentes actividades las cuales pueden impulsar a llevar una mejor vida a las personas. </p>
+    </div>
+    <div class="imagen">
+      <img src="img/otro/otro1.jpg">
+    </div>
+    <div class="espaciado"></div>
+
+
+    <!-- Coloco los demas parrafos en divs y les nombro una clase llamada parrafo la cual modifico en css para darle tamaño diferente de letra y modificar sus margenes -->
+
+    <div class="parrafo">
+      <h3>Times Square, Estados Unidos</h3>
+      <p>MNueva York es, sin duda, una de las ciudades que más turistas recibe cada año. De hecho, más de 65 millones de viajeros pasaron por ella en 2018. Y claro, la gran mayoría paseó en algún momento por Times Square, el corazón de Manhattan.</p>
+
+    </div>
+    <div class="parrafo">
+      <h3>La Torre Eiffel, Francia</h3>
+      <p>LSe trata del edificio más alto de París y uno de los lugares más visitados de la ciudad y del mundo y es que la Torre Eiffel, con sus 324 metros de altura, recibe una media de 7 millones de visitantes todo el año.</p>
+    </div>
+    <div class="parrafo">
+      <h3>Chichen Itzá, México</h3>
+      <p>El hecho de que este complejo de ruinas mayas esté incluido en la lista de Patrimonio de la Humanidad por la Unesco quizás tenga que ver con que se trate de uno de los lugares más visitados de México.</p>
+    </div>
+  </div>
+
+
+  <!-- Aqui escribi la funcion necesaria para que se ejecute el slide siendo que cada que se inicie la pagina  -->
+  <script>
+    $(document).ready(function(){
+      $('.slider1').bxSlider({
+        mode: 'fade',
+      });
+      $('.slider2').bxSlider({
+        mode: 'fade',
+      });
+      $('.slider3').bxSlider({
+        mode: 'fade',
+      });
+    });
+
+  </script>
+</body>
+</html>
